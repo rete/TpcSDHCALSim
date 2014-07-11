@@ -1,0 +1,13 @@
+/TpcSDHCALSim/targetThickness 5 cm
+/TpcSDHCALSim/distanceToCalorimeter 1 m
+/TpcSDHCALSim/BField 0 3 0 tesla
+/TpcSDHCALSim/rootOutputFile TpcSDHCALSimOutput_TG5cm_B3T_E250GeV_Ppi-.root
+
+/run/initialize
+
+/gun/particle pi-
+/gun/direction 0 0 1
+/gun/energy 250 GeV
+/gun/position 0 0 -1 m
+
+/run/beamOn 100

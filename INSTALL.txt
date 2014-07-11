@@ -1,0 +1,46 @@
+########################################
+# INSTALL file for TpcSDHCALSim package
+# @author Eté Rémi
+# @version 1.0.0 11/07/2014
+# @copyright IPNL, CNRS
+########################################
+
+
+//TpcSDHCALSim package 
+Copyright (c) 2013
+
+This file is part of TpcSDHCALSim libraries.
+
+TpcSDHCALSim is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+TpcSDHCALSim is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with TpcSDHCALSim.  If not, see <http://www.gnu.org/licenses/>.
+
+
+REQUIREMENTS:
+=============
+   Needs :
+     - 'ilcsoft' . Tested with the following version :
+       * v01-17-03
+       * v01-17-05
+
+
+INSTALL:
+=============
+
+  When all the dependencies are installed, in the TpcSDHCALSim root directory type :
+
+    mkdir build (if there's not)
+    cd build
+    cmake -C $ILCSOFT/ILCSoft.cmake ..
+    make install
+     
+  Enjoy !  :)

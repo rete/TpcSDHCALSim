@@ -1,0 +1,37 @@
+/TpcSDHCALSim/targetThickness 5 cm
+/TpcSDHCALSim/distanceToCalorimeter 1 m
+/TpcSDHCALSim/BField 0 3 0 tesla
+
+/run/initialize
+
+/vis/open OGLI
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 70 45 deg
+/vis/viewer/zoom 1
+
+/vis/scene/add/hits
+/vis/scene/add/trajectories
+
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set pi- red
+/vis/modeling/trajectories/drawByParticleID-0/set pi+ red
+/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+/vis/modeling/trajectories/drawByParticleID-0/set e+ blue
+/vis/modeling/trajectories/drawByParticleID-0/set mu- yellow
+/vis/modeling/trajectories/drawByParticleID-0/set mu+ yellow
+
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add e-
+/vis/filtering/trajectories/particleFilter-0/add e+
+/vis/filtering/trajectories/particleFilter-0/add pi-
+/vis/filtering/trajectories/particleFilter-0/add pi+
+/vis/filtering/trajectories/particleFilter-0/add mu-
+/vis/filtering/trajectories/particleFilter-0/add mu+
+
+
+/gun/particle pi-
+/gun/direction 0 0 1
+/gun/energy 250 GeV
+/gun/position 0 0 -1 m
+
+#/run/beamOn 10
